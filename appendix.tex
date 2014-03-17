@@ -1,0 +1,83 @@
+\tikzstyle{every node}=[draw=black,thick,anchor=west]
+\tikzstyle{main}=[draw=yellow,fill=yellow!30]
+\tikzstyle{selected}=[draw=blue,fill=blue!30]
+\tikzstyle{file}=[draw=white,fill=white!50]
+\begin{tikzpicture}[
+grow via three points={one child at (0.5,-0.7) and
+two children at (0.5,-0.7) and (0.5,-1.4)},
+edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
+\node {PhD pmarti}
+	child { node [main]  [xshift=6.0cm] {Data}		
+		child{ node {Catalog}
+			child{ node [file] {\href{https://www.dropbox.com/s/cdbc3ukl78dghvh/mock.r260.n1e6.s10.121027.txt}{mock.r260.n1e6.s10.121027.txt}}}
+			child{ node [file] {\href{https://www.dropbox.com/s/oblnhnmajvdkwqy/2slaq\_LRG\_webcat\_hdr.txt}{2slaq\_LRG\_webcat\_hdr.txt}}}
+			child{ node [file] {\href{https://www.dropbox.com/s/lirfrk4r1p8byl9/MegaZ_DR7.txt}{MegaZ\_DR7.txt}}}
+		}
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child{ node {Filter}
+			child{ node [selected] {\href{https://www.dropbox.com/sh/00in5c9nvf1wvpp/zgMFLSKqWA}{WHT Transmission}}}
+			child{ node [selected] {\href{https://www.dropbox.com/sh/8qkh6p3l4njca6z/iGD-6hf04V}{PAU@WHT}}}
+			child{ node [selected] {\href{https://www.dropbox.com/sh/6gbpi0euo0mee88/jtXV\_\_BpYn}{SDSS@APO}}}
+			child{ node [selected] {\href{https://www.dropbox.com/sh/yvj8e7smec3j53c/mhqYRSg2ku}{SDSS+Y\_theo}}}
+		}
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child{ node {Templates}
+			child{ node [selected] {\href{https://www.dropbox.com/sh/w9ud3bld4kukao4/l6r1d7v2gs}{Coleman Extended}}}
+			child{ node [file] {\href{https://www.dropbox.com/s/ux9n48tbfoxk55r/sky\_spectrum.txt}{sky\_spectrum.txt}}}
+		}
+		child [missing] {}				
+		child [missing] {}				
+		child{ node {Photoz}
+			child{ node {PAU}
+				child{ node [selected] {Bright}}
+				child{ node [selected] {Faint}}
+			}
+			child [missing] {}				
+			child [missing] {}				
+			child{ node {2SLAQ}
+				child{ node [file] {\href{https://www.dropbox.com/s/30xqg3tyt76w0gu/2slaq_LRG_webcat_hdr_nonobserved.cat}{2slaq\_LRG\_webcat\_hdr.cat}}}
+				child{ node [file] {\href{https://www.dropbox.com/s/907r2fmfcpikao3/2slaq_DR7_LRG_webcat_hdr_nonobserved.bpz}{2slaq\_LRG\_webcat\_hdr.bpz}}}
+				child{ node [file] {\href{https://www.dropbox.com/s/5h7pybh7y47ybjk/2slaq_DR7_LRG_webcat_hdr_nonobserved.pdf}{2slaq\_LRG\_webcat\_hdr.pdf}}}
+			}
+			child [missing] {}				
+			child [missing] {}				
+			child [missing] {}				
+			child{ node {MegaZ}}
+		}
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child [missing] {}				
+		child{ node {LSS}
+			child{ node {Corr}}
+			child{ node {Map}}
+			child{ node {Nz}}
+		}
+	}
+	child [missing] {}				
+	child { node [main] {Routine}
+		child { node [selected] {\href{https://github.com/polstein/Photogalaxy-Gencat}{Photogalaxy-Gencat}}}
+		child { node [selected] {\href{https://github.com/polstein/Photoz-Analysis}{Photoz-Analysis}}}
+		child { node [selected] {\href{https://github.com/polstein/Photoz-Analysis}{Healpy-wtheta}}}
+		child { node [selected] {\href{http://www.its.caltech.edu/~coe/BPZ/}{BPZ}}}
+	}
+	child [missing] {}				
+	child [missing] {}				
+	child [missing] {}				
+	child [missing] {}				
+	child { node [main] {Doc}
+		child { node [file] {\href{https://www.dropbox.com/s/tb5wdp7gqfyxkrn/phd.tex}{phd.tex}}}
+		child { node [file] {\href{}{content.tex}}}
+		child { node [file] {\href{}{filesys.tex}}}
+		child { node [file] {\href{}{mybib.bib}}}
+	};
+\end{tikzpicture}
