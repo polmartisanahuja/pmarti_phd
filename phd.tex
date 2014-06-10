@@ -1,6 +1,5 @@
 \documentclass[12pt, a4paper,twoside,openright]{book}
 
-\usepackage{catchfilebetweentags}
 \usepackage[comma, sort&compress]{natbib}
 \usepackage[english]{babel}
 \usepackage{graphicx}
@@ -8,6 +7,7 @@
 \usepackage{amssymb,amsmath}
 \usepackage{hhline}
 \usepackage[colorlinks=true,linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+%\usepackage[colorlinks=false,linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[hmargin=3cm,vmargin=3cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{hhline}
@@ -44,8 +44,8 @@
 
 \input{quotation.tex}
 
-\chapter*{Acknowledgements}
-\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
 \input{acknowledgements.tex}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -67,11 +67,7 @@
 \chapter{Precise photo-$z$s with narrow-band filters: The PAU@WHT Survey}
 \chaptermark{Precise photo-$z$s with narrow-bands: The PAU@WHT Survey}
 \label{ch:pau}
-\ExecuteMetaData[./photoz_pau_paper/introduction.tex]{tag1}
-
-\ExecuteMetaData[./photoz_pau_paper/introduction.tex]{tag2}
-
-\ExecuteMetaData[./photoz_pau_paper/introduction.tex]{tag3}
+\input{./photoz_pau_paper/introduction.tex}
 \input{./photoz_pau_paper/filter.tex}
 \input{./photoz_pau_paper/mock.tex}
 \input{./photoz_pau_paper/photoz.tex}
@@ -81,11 +77,7 @@
 \chapter{Photo-$z$ quality cuts and their impact on the measured galaxy clustering}
 \chaptermark{Photo-$z$ quality cuts and their impact on galaxy clustering}
 \label{ch:odds}
-\ExecuteMetaData[./odds_paper/introduction.tex]{tag1}
-
-\ExecuteMetaData[./odds_paper/introduction.tex]{tag2}
-
-\ExecuteMetaData[./odds_paper/introduction.tex]{tag3}
+\input{./odds_paper/introduction.tex}
 \input{./odds_paper/data_samples.tex}
 \input{./odds_paper/photoz.tex}
 \input{./odds_paper/clustering.tex}
@@ -98,12 +90,8 @@
 \input{conclusions.tex}
 
 \bibliographystyle{mn2e}
-\bibliography{../bibtex/library}
-%\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{/Users/polstein/Documents/library}
 \label{Bibliography}
 
-%\chapter*{Appendix}
-%\addcontentsline{toc}{chapter}{Appendix}
-%\input{appendix.tex}
 
 \end{document}
