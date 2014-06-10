@@ -1,0 +1,81 @@
+\section{Discussion and Conclusions}
+\label{sec:discussion}
+%
+In the previous sections we have seen how photo-z
+quality cuts, if left uncorrected, can severely bias the measured
+galaxy angular auto- and cross-correlations. The effect, as seen in
+Figs.~\ref{auto_odcorr} and~\ref{cross_odcorr}, consists mostly of a
+large increase in the correlation across the whole range in angular
+separation, although slightly more prominent at larger
+separations. This is not unlike the effect reported in other clustering
+studies based on very similar samples, such as those in~\citet{Thomas2011a}
+and in~\citet{Crocce2011}. In those papers an excess of clustering has
+been observed in the photometric redshift bin $0.6 < z < 0.65$. In at
+least one of the papers~\citep{Crocce2011} a photo-z quality cut is
+perfomed, eliminating about 16\% of the galaxies, but no attempt is
+made to correct for the possible effect of this cut on the measured
+correlations.  While a quick look at Fig.~\ref{auto_odcorr} reveals
+that in our case the effect of the photo-z quality cut is more
+prominent at lower redshifts, the issue may deserve more thorough study, 
+which lies beyond the scope of this thesis.
+
+It is intriguing to see that, at least in the $0.45 < z < 0.50$
+photo-z bin, there is a correlation between galaxy density and 
+{\em odds} value even before any cut on the value of the {\em odds}
+(bottom-left plot in Fig.~\ref{gal_map}). This
+correlation then leads to extra galaxy auto- and cross-correlations
+whenever that first photo-z bin is involved (top-left plot in
+Fig.~\ref{auto_odcorr} and top-right plot in Fig.~\ref{cross_odcorr}). 
+The correction method we propose
+eliminates this extra correlation very effectively (see the corresponding plots in
+Figs.~\ref{auto_odcorr} and \ref{cross_odcorr}), but the question
+remains: what is it that we are actually eliminating? Or: where does
+this galaxy-{\em odds} correlation come from? 
+
+One possibility is that
+it comes from systematic effects in the survey that are otherwise
+uncorrected: differences in seeing conditions, airmass, extinction,
+etc. between different areas of the survey will lead to correlated differences in
+galaxy density and in the value of the {\em odds} parameter. In
+general, these systematic effects would result in an additive extra
+correlation. In this case, correcting for this
+spurious correlation will mitigate the effects of those systematic issues.
+
+However, in general, another possibility is that the galaxy-{\em odds} correlation is due to the
+fact that different galaxy types have different clustering amplitudes
+(different biases) and, at the same time, also have different mean
+photo-z precisions, hence different mean {\em odds}. 
+%For instance, LRGs have typically larger bias and more precise photo-z
+%(hence larger {\em odds}) than spiral galaxies. 
+In this case, the {\em odds} correction could be removing genuine
+galaxy-galaxy correlations. Alternatively, one could interpret that
+the correction would be changing the average galaxy
+type (and hence bias) of the sample. Hence, this would result in a
+multiplicative extra correlation.
+
+In our case, since the sample is largely composed of LRGs, the
+galaxy-{\em odds}  correlation we observe in the lower photo-z bin is likely 
+due to the uncorrected systematic effects mentioned above, and,
+therefore, it makes sense to apply the {\em odds} correction even without an
+explicit {\em odds} cut. We observe that, indeed, the extra
+correlation we observe seems to be additive in nature (i.e.~roughly
+constant as a function of angular scale).
+Figures~\ref{auto_odcorr} and \ref{cross_odcorr} show that, even with
+no {\em odds} cut, the agreement
+with the predictions improves once the {\em odds} correction
+has been applied.
+
+\vspace*{1em}
+
+In summary, using the Mega-Z DR7 galaxy sample and the {\tt BPZ}
+photometric redshift code,
+we have shown that applying moderate galaxy photo-z quality cuts
+may lead to large biases in the measured galaxy auto- and cross-correlations.
+However, a correction method
+derived within the framework presented in~\citet{Ho2012, Ross2011}
+%{\color{red} Add Ross et al. 2012.} 
+manages to recover the original correlation functions and,
+in particular, does not bias the extraction of the BAO peak. It
+remains to be seen whether this correction might eliminate some or
+all of the excess correlation observed by several groups in galaxy
+samples essentially identical to the one we use.
