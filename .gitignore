@@ -1,5 +1,6 @@
-.gitignore
 .DS_Store
+odds_paper/.DS_Store
+plots/.DS_Store
 *.acn
 *.acr
 *.alg
